@@ -9,7 +9,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import reducer from './reducers/reducer.jsx'
 import Manage from './containers/manage.jsx'
-// require('../scss/index.scss')
+require('../scss/index.scss')
 
 const store = applyMiddleware(thunk)(createStore)(reducer)
 
