@@ -71,7 +71,7 @@ RSpec.describe 'Questions API', type: :request do
       end
 
       it 'returns a validation failure message' do
-        expect(response.body).to match(/Validation failed: Created by can't be blank/)
+        expect(response.body).to match(/Validation failed: Answer can't be blank/)
       end
     end
   end
@@ -95,7 +95,7 @@ RSpec.describe 'Questions API', type: :request do
 
   # DELETE /questions/:id
   describe 'DELETE /questions/:id' do
-    before { delete "/questions/#{questions_id}" }
+    before { delete "/questions/#{question_id}" }
 
     it 'returns status code 204' do
       expect(response).to have_http_status(204)
