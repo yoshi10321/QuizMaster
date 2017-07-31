@@ -17,13 +17,13 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  host: localhost
   username: root
   password:
+  host: localhost
   database: quizmaster_test
 
 production:
   <<: *default
-  host: localhost
   username: root
   password:
+  host: localhost
