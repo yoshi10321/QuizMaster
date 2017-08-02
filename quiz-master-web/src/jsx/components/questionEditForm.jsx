@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { editQuestion } from '../actions/editQuestion'
+import { deleteQuestion } from '../actions/deleteQuestion'
 
 require('../../scss/questionEditForm.scss')
 
@@ -51,6 +52,7 @@ export class QuestionEditForm extends React.PureComponent {
             </label>
           </p>
           <input type='button' value='update' onClick={() => dispatch(editQuestion(question.id, this.state.content, this.state.answer))} />
+          <input type='button' value='delete' onClick={() => dispatch(deleteQuestion(question.id))} />
         </form>
       </div>
     )
