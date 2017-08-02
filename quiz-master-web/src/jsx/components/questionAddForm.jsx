@@ -28,6 +28,7 @@ export class QuestionAddForm extends React.PureComponent {
     const { dispatch } = this.props
     return (
       <div className='question-add-form'>
+        <p>Regist</p>
         <form>
           <p>
             <label>

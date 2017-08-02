@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { fetchQuestions } from '../actions/fetchQuestions'
+import { selectQuestion } from '../actions/selectQuestion'
 
 require('../../scss/questionsList.scss')
 
@@ -11,11 +12,11 @@ export class QuestionsList extends React.PureComponent {
   }
 
   render () {
-    const { questions } = this.props
+    const { questions, dispatch } = this.props
     let listItems
     if (questions) {
       listItems = questions.data.map((question) =>
-        <li key={question.id} className='questions-list-item'>
+        <li key={question.id} className='questions-list-item' onClick={() => dispatch(selectQuestion(question.id, question.content, question.answer))}>
           <div>
             <p>{question.content}</p>
             <p>{question.answer}</p>

@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import QuestionsList from '../components/questionsList'
 import QuestionAddForm from '../components/questionAddForm'
+import QuestionEditForm from '../components/questionEditForm'
 
 require('../../scss/manage.scss')
 
@@ -14,6 +15,7 @@ export var Manage = class Manage extends React.PureComponent {
         </div>
         <div className='manage-right'>
           <QuestionAddForm />
+          <QuestionEditForm />
         </div>
       </div>
     )
