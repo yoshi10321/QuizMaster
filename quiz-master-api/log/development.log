@@ -825,3 +825,151 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:32:56 +0900
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-08-02 19:33:06 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"content"=>"よこしの年は？", "answer"=>"32", "question"=>{"content"=>"よこしの年は？", "answer"=>"32"}}
+Unpermitted parameter: :question
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO `questions` (`content`, `answer`, `created_at`, `updated_at`) VALUES ('よこしの年は？', '32', '2017-08-02 10:33:06', '2017-08-02 10:33:06')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 9ms (Views: 0.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:33:08 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/questions/5" for 127.0.0.1 at 2017-08-02 19:33:17 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"よこしの年は？", "answer"=>"29", "id"=>"5", "question"=>{"content"=>"よこしの年は？", "answer"=>"29"}}
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 5 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `questions` SET `answer` = '29', `updated_at` = '2017-08-02 10:33:17' WHERE `questions`.`id` = 5[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:33:19 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/questions/5" for 127.0.0.1 at 2017-08-02 19:33:24 +0900
+Processing by QuestionsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM `questions` WHERE `questions`.`id` = 5[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:33:25 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:50:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:52:41 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:52:49 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:53:34 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 19:54:20 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 22:00:06 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (6.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 23ms (Views: 13.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 22:45:02 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 22:45:20 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:00:24 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:22:41 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:22:59 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:23:14 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:27:00 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:27:19 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-02 23:36:08 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (3.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 3.3ms)
+
+

@@ -101,4 +101,60 @@ RSpec.describe 'Questions API', type: :request do
       expect(response).to have_http_status(204)
     end
   end
+
+  # POST /questions/:id/answer
+  describe 'POST /questions/:id/answer' do
+    context 'when the param is correct number' do
+      before { post "/questions/#{question_id}/answer", params: { answer: 1 } }
+
+      it 'returns correct' do
+        expect(JSON.parse(response.body)).not_to be_empty
+        expect(JSON.parse(response.body)['status']).to eq('correct')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    context 'when the param is correct text' do
+      before { post "/questions/#{question_id}/answer", params: { answer: 'one' } }
+
+      it 'returns correct' do
+        expect(JSON.parse(response.body)).not_to be_empty
+        expect(JSON.parse(response.body)['status']).to eq('correct')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    context 'when the param is wrong number' do
+      before { post "/questions/#{question_id}/answer", params: { answer: 2 } }
+
+      it 'returns correct' do
+        expect(JSON.parse(response.body)).not_to be_empty
+        expect(JSON.parse(response.body)['status']).to eq('correct')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    context 'when the param is wrong text' do
+      before { post "/questions/#{question_id}/answer", params: { answer: 'two' } }
+
+      it 'returns correct' do
+        expect(JSON.parse(response.body)).not_to be_empty
+        expect(JSON.parse(response.body)['status']).to eq('incorrect')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+  end
+
 end
