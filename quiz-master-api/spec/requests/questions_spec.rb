@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.describe 'Questions API', type: :request do
 
   let!(:questions) { create_list(:question, 10) }
+  let!(:question_number) { create(:answerNumber) }
   let(:question_id) { questions.first.id }
+  let(:question_id_num) { question_number.first.id }
 
   # GET /questions
   describe 'GET /questions' do
@@ -11,7 +13,7 @@ RSpec.describe 'Questions API', type: :request do
 
     it 'returns questions' do
       expect(JSON.parse(response.body)).not_to be_empty
-      expect(JSON.parse(response.body).size).to eq(10)
+      expect(JSON.parse(response.body).size).to eq(11)
     end
     
     it 'returns status code 200' do
@@ -105,7 +107,7 @@ RSpec.describe 'Questions API', type: :request do
   # POST /questions/:id/answer
   describe 'POST /questions/:id/answer' do
     context 'when the param is correct number' do
-      before { post "/questions/#{question_id}/answer", params: { answer: 1 } }
+      before { post "/questions/#{question_id_num}/answer", params: { answer: 1 } }
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
@@ -118,7 +120,7 @@ RSpec.describe 'Questions API', type: :request do
     end
 
     context 'when the param is correct text' do
-      before { post "/questions/#{question_id}/answer", params: { answer: 'one' } }
+      before { post "/questions/#{question_id_num}/answer", params: { answer: 'one' } }
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
@@ -131,7 +133,7 @@ RSpec.describe 'Questions API', type: :request do
     end
 
     context 'when the param is wrong number' do
-      before { post "/questions/#{question_id}/answer", params: { answer: 2 } }
+      before { post "/questions/#{question_id_num}/answer", params: { answer: 2 } }
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
@@ -144,7 +146,7 @@ RSpec.describe 'Questions API', type: :request do
     end
 
     context 'when the param is wrong text' do
-      before { post "/questions/#{question_id}/answer", params: { answer: 'two' } }
+      before { post "/questions/#{question_id_num}/answer", params: { answer: 'two' } }
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
