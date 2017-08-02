@@ -9,6 +9,7 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import reducer from './reducers/reducer.jsx'
 import Manage from './containers/manage.jsx'
+import Answer from './containers/answer.jsx'
 require('../scss/index.scss')
 
 const store = applyMiddleware(thunk)(createStore)(reducer)
@@ -18,6 +19,7 @@ render(
     <Router>
       <div>
         <Route exact path='/' component={Manage} />
+        <Route exact path='/answer' component={Answer} />
       </div>
     </Router>
   </Provider>,
