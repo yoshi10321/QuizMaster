@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+  include Answer
+
   before_action :set_question, only: [:show, :update, :destroy]
 
   # GET /questions
@@ -28,6 +30,17 @@ class QuestionsController < ApplicationController
     @question.destroy
   end
   
+  # POST /questions/:id/answer
+  def answer
+    @userAnswer = params[:answer]
+    @id = params[:question_id]
+    @questionAnswer = Question.find(@id).answer
+
+    @result = check_answer(@userAnswer, @questionAnswer)
+    
+    json_response(:status => @result)
+  end
+
   private
 
   def question_params

@@ -8,4 +8,9 @@ FactoryGirl.define do
     content { Faker::StarWars.character }
     answer { 1 }
   end
+
+  factory :answerWord, class: Question do
+    content { Faker::StarWars.character }
+    answer { "word" }
+  end
 end

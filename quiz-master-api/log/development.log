@@ -973,3 +973,331 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 3.3ms)
 
 
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 12:55:27 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:34:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 12:58:57 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 3.2ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:35:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 12:59:29 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 4.2ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:36:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:00:00 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:00:08 +0900
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 4.3ms)
+
+
+  
+NoMethodError (undefined method `println' for #<QuestionsController:0x007fe3aaf44148>
+Did you mean?  print
+               printf):
+  
+app/controllers/questions_controller.rb:33:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:00:22 +0900
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 1.9ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/questions_controller.rb:34:in `printf'
+app/controllers/questions_controller.rb:34:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:01:49 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:38:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:02:11 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 4.2ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:40:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:02:50 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/questions/4/answer"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:03:26 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/questions/4/answer"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions/4/answer?answer=1" for 127.0.0.1 at 2017-08-03 13:03:44 +0900
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `answer' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:40:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:05:38 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:14:12 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `status=' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:38:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:19:22 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.2ms)
+
+
+  
+NoMethodError (undefined method `status=' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:38:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:19:45 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `status=' for nil:NilClass):
+  
+app/controllers/questions_controller.rb:38:in `answer'
+Started POST "/questions/4/answer" for 127.0.0.1 at 2017-08-03 13:20:28 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"4", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:20:45 +0900
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mQuestion Load (2.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:21:44 +0900
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:23:22 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:23:56 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:24:43 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = NULL LIMIT 1[0m
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:25:16 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = NULL LIMIT 1[0m
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 13:25:50 +0900
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-03 19:12:58 +0900
+  [1m[35m (4.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (2.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-03 19:13:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-03 19:17:02 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 20:59:47 +0900
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 21:00:16 +0900
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>1, "question_id"=>"3", "question"=>{"answer"=>1}}
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mQuestion Load (2.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 22:20:37 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"1", "question_id"=>"3", "question"=>{"answer"=>"1"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/questions/3/answer" for 127.0.0.1 at 2017-08-03 22:21:04 +0900
+Processing by QuestionsController#answer as */*
+  Parameters: {"answer"=>"test", "question_id"=>"3", "question"=>{"answer"=>"test"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mQuestion Load (3.6ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 3 LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.8ms)
+
+

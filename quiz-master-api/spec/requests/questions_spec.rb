@@ -4,8 +4,10 @@ RSpec.describe 'Questions API', type: :request do
 
   let!(:questions) { create_list(:question, 10) }
   let!(:question_number) { create(:answerNumber) }
+  let!(:question_word) { create(:answerWord) }
   let(:question_id) { questions.first.id }
-  let(:question_id_num) { question_number.first.id }
+  let(:question_id_num) { question_number.id }
+  let(:question_id_word) { question_word.id }
 
   # GET /questions
   describe 'GET /questions' do
@@ -13,7 +15,7 @@ RSpec.describe 'Questions API', type: :request do
 
     it 'returns questions' do
       expect(JSON.parse(response.body)).not_to be_empty
-      expect(JSON.parse(response.body).size).to eq(11)
+      expect(JSON.parse(response.body).size).to eq(12)
     end
     
     it 'returns status code 200' do
@@ -137,7 +139,7 @@ RSpec.describe 'Questions API', type: :request do
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('correct')
+        expect(JSON.parse(response.body)['status']).to eq('incorrect')
       end
 
       it 'returns status code 200' do
@@ -145,12 +147,12 @@ RSpec.describe 'Questions API', type: :request do
       end
     end
 
-    context 'when the param is wrong text' do
-      before { post "/questions/#{question_id_num}/answer", params: { answer: 'two' } }
+    context 'when the answer is word' do
+      before { post "/questions/#{question_id_word}/answer", params: { answer: 'word' } }
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('incorrect')
+        expect(JSON.parse(response.body)['status']).to eq('correct')
       end
 
       it 'returns status code 200' do
