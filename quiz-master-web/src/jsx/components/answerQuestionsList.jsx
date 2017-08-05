@@ -3,8 +3,6 @@ import { connect } from 'react-redux'
 import { fetchQuestions } from '../actions/fetchQuestions'
 import AnswerForm from '../components/answerForm'
 
-require('../../scss/questionsList.scss')
-
 export class AnswerQuestionsList extends React.PureComponent {
   componentDidMount () {
     const { dispatch } = this.props
@@ -14,13 +12,11 @@ export class AnswerQuestionsList extends React.PureComponent {
   render () {
     const { questions } = this.props
     let listItems
+
     if (questions) {
-      listItems = questions.data.map((question) =>
-        <li key={question.id} className='answer-questions-list-item'>
-          <div>
-            <p>{question.content}</p>
-          </div>
-          <AnswerForm />
+      listItems = questions.data.map((question, index) =>
+        <li key={question.id}>
+          <AnswerForm index={index} content={question.content} id={question.id} result={question.result} />
         </li>
       )
     }

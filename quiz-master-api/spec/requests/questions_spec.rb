@@ -113,7 +113,7 @@ RSpec.describe 'Questions API', type: :request do
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('correct')
+        expect(JSON.parse(response.body)['result']).to eq('correct')
       end
 
       it 'returns status code 200' do
@@ -126,7 +126,7 @@ RSpec.describe 'Questions API', type: :request do
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('correct')
+        expect(JSON.parse(response.body)['result']).to eq('correct')
       end
 
       it 'returns status code 200' do
@@ -139,7 +139,20 @@ RSpec.describe 'Questions API', type: :request do
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('incorrect')
+        expect(JSON.parse(response.body)['result']).to eq('incorrect')
+      end
+
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
+      end
+    end
+
+    context 'when the param is wrong text' do
+      before { post "/questions/#{question_id_num}/answer", params: { answer: 'two' } }
+
+      it 'returns correct' do
+        expect(JSON.parse(response.body)).not_to be_empty
+        expect(JSON.parse(response.body)['result']).to eq('incorrect')
       end
 
       it 'returns status code 200' do
@@ -152,7 +165,7 @@ RSpec.describe 'Questions API', type: :request do
 
       it 'returns correct' do
         expect(JSON.parse(response.body)).not_to be_empty
-        expect(JSON.parse(response.body)['status']).to eq('correct')
+        expect(JSON.parse(response.body)['result']).to eq('correct')
       end
 
       it 'returns status code 200' do

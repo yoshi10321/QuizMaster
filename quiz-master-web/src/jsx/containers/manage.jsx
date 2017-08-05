@@ -9,13 +9,15 @@ require('../../scss/manage.scss')
 export var Manage = class Manage extends React.PureComponent {
   render () {
     return (
-      <div>
-        <div className='manage-left'>
-          <QuestionsList />
-        </div>
-        <div className='manage-right'>
-          <QuestionAddForm />
-          <QuestionEditForm />
+      <div className='manage'>
+        <div className='manage-inner'>
+          <div className='manage-left'>
+            <QuestionsList />
+          </div>
+          <div className='manage-right'>
+            <QuestionAddForm />
+            <QuestionEditForm />
+          </div>
         </div>
       </div>
     )

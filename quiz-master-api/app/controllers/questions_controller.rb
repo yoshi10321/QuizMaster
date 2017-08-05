@@ -38,7 +38,7 @@ class QuestionsController < ApplicationController
 
     @result = check_answer(@userAnswer, @questionAnswer)
     
-    json_response(:status => @result)
+    json_response(:result => @result)
   end
 
   private

@@ -1,5 +1,11 @@
-.answer-questions-list-item {
-  background-color: #FFF;
+.answer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #CDDC39;
+}
+
+.answer-inner {
+  max-width: 980px;
   padding: 20px;
-  margin: 10px;
+  margin: auto;
 }

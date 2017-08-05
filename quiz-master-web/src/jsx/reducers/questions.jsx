@@ -1,4 +1,5 @@
 import { FETCH_QUESTIONS_SUCCESS, FETCH_QUESTIONS_ERROR } from '../actions/fetchQuestions'
+import { ANSWER_QUESTION_SUCCESS } from '../actions/answerQuestion'
 
 const defaultState = {
   data: []
@@ -16,6 +17,22 @@ function questions (state = defaultState, action) {
   }
   case FETCH_QUESTIONS_ERROR: {
     return {}
+  }
+  case ANSWER_QUESTION_SUCCESS: {
+    state.data = state.data.map((item, index) => {
+      if (item.id !== action.id) {
+        return item
+      }
+
+      if (item.id === action.id) {
+        item.result = action.result
+        return item
+      }
+    })
+
+    return Object.assign({}, state, {
+      state
+    })
   }
   default:
     return state

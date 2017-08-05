@@ -7,8 +7,11 @@ require('../../scss/answer.scss')
 export var Answer = class Answer extends React.PureComponent {
   render () {
     return (
-      <div>
-        <AnswerQuestionsList />
+      <div className='answer'>
+        <div className='answer-inner'>
+          Let's answer the questions!
+          <AnswerQuestionsList />
+        </div>
       </div>
     )
   }
