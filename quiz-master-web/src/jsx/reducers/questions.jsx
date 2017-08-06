@@ -16,7 +16,7 @@ function questions (state = defaultState, action) {
     })
   }
   case FETCH_QUESTIONS_ERROR: {
-    return {}
+    return state
   }
   case ANSWER_QUESTION_SUCCESS: {
     state.data = state.data.map((item, index) => {
@@ -30,9 +30,7 @@ function questions (state = defaultState, action) {
       }
     })
 
-    return Object.assign({}, state, {
-      state
-    })
+    return Object.assign({}, state)
   }
   default:
     return state
