@@ -67,7 +67,7 @@ export class AnswerForm extends React.PureComponent {
         <div className='answer-form-left'>
           <div>
             <h3 className='answer-form-text-h3'>Question{this.state.index + 1}</h3>
-            <p>{this.state.content}</p>
+            <div dangerouslySetInnerHTML={{ __html: this.state.content }} />
           </div>
           <br />
           <h3 className='answer-form-text-h3'>Answer</h3>

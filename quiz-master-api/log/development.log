@@ -4002,3 +4002,179 @@ Processing by QuestionsController#answer as HTML
 Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 8.1ms)
 
 
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 19:38:20 +0900
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:06:28 +0900
+  [1m[35m (2.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:14: syntax error, unexpected tSYMBEG, expecting '('
+    question_params.:content = EscapeUtils.escape_...
+                     ^
+/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:14: syntax error, unexpected tSYMBEG, expecting '('
+...pe_javascript(question_params.:content)
+...                               ^
+/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:26: syntax error, unexpected tSYMBEG, expecting '('
+    question_params.:content = EscapeUtils.escape_...
+                     ^
+/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:26: syntax error, unexpected tSYMBEG, expecting '('
+...pe_javascript(question_params.:content)
+...                               ^):
+  
+app/controllers/questions_controller.rb:14: syntax error, unexpected tSYMBEG, expecting '('
+app/controllers/questions_controller.rb:14: syntax error, unexpected tSYMBEG, expecting '('
+app/controllers/questions_controller.rb:26: syntax error, unexpected tSYMBEG, expecting '('
+app/controllers/questions_controller.rb:26: syntax error, unexpected tSYMBEG, expecting '('
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:07:22 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+SyntaxError (/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+    question_params:content = EscapeUtils.escape_javascrip...
+                             ^
+/Users/a12711/Documents/git-localrepository/QuizMaster/quiz-master-api/app/controllers/questions_controller.rb:26: syntax error, unexpected '=', expecting keyword_end
+    question_params:content = EscapeUtils.escape_javascrip...
+                             ^):
+  
+app/controllers/questions_controller.rb:14: syntax error, unexpected '=', expecting keyword_end
+app/controllers/questions_controller.rb:26: syntax error, unexpected '=', expecting keyword_end
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:09:03 +0900
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 4.2ms)
+
+
+Started PUT "/questions/4" for 127.0.0.1 at 2017-08-06 20:09:28 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"test<span style=\"color: red;\">tes</span><script>alert('aa');</script>", "answer"=>"2", "id"=>"4", "question"=>{"content"=>"test<span style=\"color: red;\">tes</span><script>alert('aa');</script>", "answer"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 4 LIMIT 1[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.5ms)
+
+
+  
+NameError (uninitialized constant QuestionsController::EscapeUtils):
+  
+app/controllers/questions_controller.rb:26:in `update'
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:13:48 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/questions/4" for 127.0.0.1 at 2017-08-06 20:13:58 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"test<span style=\"color: red;\">tesaa</span>", "answer"=>"2", "id"=>"4", "question"=>{"content"=>"test<span style=\"color: red;\">tesaa</span>", "answer"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 4 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE `questions` SET `content` = 'test<span style=\\\"color: red;\\\">tesaa<\\/span>', `updated_at` = '2017-08-06 11:13:58' WHERE `questions`.`id` = 4[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 11ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:14:02 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/questions/4" for 127.0.0.1 at 2017-08-06 20:14:26 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"test<span style=\\\"color: red;\\\">tesaa<\\/span><script>alert('aa');</script>", "answer"=>"2", "id"=>"4", "question"=>{"content"=>"test<span style=\\\"color: red;\\\">tesaa<\\/span><script>alert('aa');</script>", "answer"=>"2"}}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 4 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `questions` SET `content` = 'test<span style=\\\\\\\"color: red;\\\\\\\">tesaa<\\\\/span><script>alert(\\\'aa\\\');<\\/script>', `updated_at` = '2017-08-06 11:14:26' WHERE `questions`.`id` = 4[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:14:29 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:14:44 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:14:59 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/questions/4" for 127.0.0.1 at 2017-08-06 20:32:03 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"test<span style=\\\\\\\"color: red;\\\\\\\">tesaa<\\\\/span><script>alert(\\'aa\\');<\\/script>", "answer"=>"2", "id"=>"4", "question"=>{"content"=>"test<span style=\\\\\\\"color: red;\\\\\\\">tesaa<\\\\/span><script>alert(\\'aa\\');<\\/script>", "answer"=>"2"}}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 4 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE `questions` SET `content` = 'test<span style=\\\\\\\\\\\\\\\"color: red;\\\\\\\\\\\\\\\">tesaa<\\\\\\\\/span><script>alert(\\\\\\\'aa\\\\\\\');<\\\\/script>', `updated_at` = '2017-08-06 11:32:03' WHERE `questions`.`id` = 4[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 7ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:32:05 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:45:58 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:46:00 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:46:09 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:46:19 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:47:04 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:49:10 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-06 20:50:11 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
