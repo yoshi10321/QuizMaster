@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170730233718) do
+ActiveRecord::Schema.define(version: 20170807092349) do
+
+  create_table "correct_rates", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "correct_count"
+    t.integer "incorrect_count"
+    t.integer "correct_rate"
+    t.bigint "question_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["correct_rate"], name: "index_correct_rates_on_correct_rate"
+    t.index ["question_id"], name: "index_correct_rates_on_question_id"
+  end
 
   create_table "questions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "content"
@@ -19,4 +30,5 @@ ActiveRecord::Schema.define(version: 20170730233718) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "correct_rates", "questions"
 end

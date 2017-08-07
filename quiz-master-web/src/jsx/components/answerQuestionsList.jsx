@@ -16,7 +16,7 @@ export class AnswerQuestionsList extends React.PureComponent {
     if (questions) {
       listItems = questions.data.map((question, index) =>
         <li key={question.id}>
-          <AnswerForm index={index} content={question.content} id={question.id} result={question.result} />
+          <AnswerForm {...question} index={index} />
         </li>
       )
     }

@@ -8,6 +8,7 @@ RSpec.describe 'Questions API', type: :request do
   let(:question_id) { questions.first.id }
   let(:question_id_num) { question_number.id }
   let(:question_id_word) { question_word.id }
+  let!(:correct_rate) { create(:correct_rate, question_id:questions.first.id )}
 
   # GET /questions
   describe 'GET /questions' do
@@ -31,6 +32,7 @@ RSpec.describe 'Questions API', type: :request do
       it 'returns one question' do
         expect(JSON.parse(response.body)).not_to be_empty
         expect(JSON.parse(response.body)['id']).to eq(question_id)
+        expect(JSON.parse(response.body)['correct_rate']['correct_rate']).to eq(67)
       end
     
       it 'returns status code 200' do

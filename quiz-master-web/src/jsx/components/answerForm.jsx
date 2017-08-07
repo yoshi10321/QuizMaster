@@ -25,8 +25,6 @@ export class AnswerForm extends React.PureComponent {
     this.state = {
       formValue: '',
       index: props.index,
-      id: props.id,
-      content: props.content,
       show: false
     }
 
@@ -40,34 +38,40 @@ export class AnswerForm extends React.PureComponent {
 
   handleAnswerQuestion () {
     this.setState({show: false})
-    const { dispatch } = this.props
-    dispatch(answerQuestion(this.state.id, this.state.formValue))
+    const { dispatch, ...question } = this.props
+    dispatch(answerQuestion(question.id, this.state.formValue))
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.result === 'correct' || nextProps.result === 'incorrect') {
+    const { ...question } = nextProps
+    if (question.result === 'correct' || question.result === 'incorrect') {
       this.setState({show: true})
     }
   }
 
   render () {
-    const { result } = this.props
+    const { ...question } = this.props
 
     let answerResult
-    if (result === 'correct') {
+    if (question.result === 'correct') {
       answerResult = <div className='answer-form-result'>◯</div>
-    } else if (result === 'incorrect') {
+    } else if (question.result === 'incorrect') {
       answerResult = <div className='answer-form-result'>×</div>
     } else {
       answerResult = <div className='answer-form-result' />
+    }
+
+    let correctRate
+    if (question.correct_rate) {
+      correctRate = <span>Rate {question.correct_rate.correct_rate}%</span>
     }
 
     return (
       <div className='answer-form'>
         <div className='answer-form-left'>
           <div>
-            <h3 className='answer-form-text-h3'>Question{this.state.index + 1}</h3>
-            <div dangerouslySetInnerHTML={{ __html: this.state.content }} />
+            <h3 className='answer-form-text-h3'>Question{this.state.index + 1} {correctRate}</h3>
+            <div dangerouslySetInnerHTML={{ __html: question.content }} />
           </div>
           <br />
           <h3 className='answer-form-text-h3'>Answer</h3>
@@ -91,9 +95,7 @@ export class AnswerForm extends React.PureComponent {
 AnswerForm.propTypes = {
   dispatch: PropTypes.func.isRequired,
   index: PropTypes.number,
-  id: PropTypes.number,
-  content: PropTypes.string,
-  result: PropTypes.string
+  question: PropTypes.object
 }
 
 function mapStateToProps (state) {
