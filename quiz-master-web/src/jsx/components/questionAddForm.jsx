@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { registQuestion } from '../actions/registQuestion'
+import { registQuestion, REGIST_QUESTION_SUCCESS_MESSAGE } from '../actions/registQuestion'
 
 require('../../scss/questionAddForm.scss')
 
@@ -24,6 +24,16 @@ export class QuestionAddForm extends React.PureComponent {
     this.setState({answer: e.target.value})
   }
 
+  componentWillReceiveProps (nextProps) {
+    const { notification } = nextProps
+    if (notification.message === REGIST_QUESTION_SUCCESS_MESSAGE) {
+      this.setState({
+        content: '',
+        answer: ''
+      })
+    }
+  }
+
   render () {
     const { dispatch } = this.props
     return (
@@ -33,13 +43,14 @@ export class QuestionAddForm extends React.PureComponent {
           <p>
             <label>
               Content:
-              <input type='text' name='content' onChange={this.handleContentChange} />
+              <textarea className='question-add-form-input' name='content' rows='10' value={this.state.content} onChange={this.handleContentChange} />
             </label>
           </p>
           <p>
             <label>
               Answer:
-              <input type='text' name='answer' onChange={this.handleAnswerChange} />
+              <br />
+              <input className='question-add-form-input' type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
             </label>
           </p>
           <input type='button' value='regist' onClick={() => dispatch(registQuestion(this.state.content, this.state.answer))} />
@@ -50,7 +61,12 @@ export class QuestionAddForm extends React.PureComponent {
 }
 
 QuestionAddForm.propTypes = {
-  dispatch: PropTypes.func.isRequired
+  dispatch: PropTypes.func.isRequired,
+  notification: PropTypes.object
 }
 
-export default connect()(QuestionAddForm)
+function mapStateToProps (state) {
+  return state
+}
+
+export default connect(mapStateToProps)(QuestionAddForm)

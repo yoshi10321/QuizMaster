@@ -63,7 +63,7 @@ export class AnswerForm extends React.PureComponent {
 
     let correctRate
     if (question.correct_rate) {
-      correctRate = <span>Rate {question.correct_rate.correct_rate}%</span>
+      correctRate = <p className='answer-form-rate'>Correct Answer Rate {question.correct_rate.correct_rate}%</p>
     }
 
     return (

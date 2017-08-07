@@ -18,7 +18,7 @@ render(
   <Provider store={store}>
     <Router>
       <div>
-        <Route exact path='/' component={Manage} />
+        <Route exact path='/manage' component={Manage} />
         <Route exact path='/answer' component={Answer} />
       </div>
     </Router>

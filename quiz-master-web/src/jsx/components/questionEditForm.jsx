@@ -42,13 +42,14 @@ export class QuestionEditForm extends React.PureComponent {
           <p>
             <label>
               Content:
-              <input type='text' name='content' value={this.state.content} onChange={this.handleContentChange} />
+              <textarea className='question-edit-form-input' name='content' rows='10' value={this.state.content} onChange={this.handleContentChange} />
             </label>
           </p>
           <p>
             <label>
               Answer:
-              <input type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
+              <br />
+              <input className='question-edit-form-input' type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
             </label>
           </p>
           <input type='button' value='update' onClick={() => dispatch(editQuestion(question.id, this.state.content, this.state.answer))} />

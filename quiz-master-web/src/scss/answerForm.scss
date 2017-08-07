@@ -16,7 +16,7 @@
 }
 
 .answer-form-text-h3 {
-  font-size: 56sp;
+  font-size: 30px;
 }
 
 .answer-form-result {
@@ -42,4 +42,10 @@
 .answer-form-result-exit.answer-form-result-exit-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+
+.answer-form-rate {
+  font-size: 10px;
+  opacity: 0.54;
+  margin-top: 5px;
 }

@@ -11,6 +11,7 @@ export var Manage = class Manage extends React.PureComponent {
     return (
       <div className='manage'>
         <div className='manage-inner'>
+          <h3>manage questions view</h3>
           <div className='manage-left'>
             <QuestionsList />
           </div>

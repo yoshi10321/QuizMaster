@@ -18,7 +18,10 @@ export class QuestionsList extends React.PureComponent {
       listItems = questions.data.map((question) =>
         <li key={question.id} className='questions-list-item' onClick={() => dispatch(selectQuestion(question.id, question.content, question.answer))}>
           <div>
-            <p>{question.content}</p>
+            <p>Content</p>
+            <div className='questions-list-item-content' dangerouslySetInnerHTML={{ __html: question.content }} />
+            <br />
+            <p>Answer</p>
             <p>{question.answer}</p>
           </div>
         </li>
