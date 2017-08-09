@@ -18,11 +18,9 @@ npm install
 npm start
 ```
 
-you can access to
-```
-Manage Questions view[http://localhost:9000/manage](http://localhost:9000/manage)
-Quiz mode view[http://localhost:9000/answer](http://localhost:9000/answer)
-```
+you can access to  
+Manage Questions view [http://localhost:9000/manage](http://localhost:9000/manage)  
+Quiz mode view [http://localhost:9000/answer](http://localhost:9000/answer)
 
 ## Test
 using `jest` for testing.
@@ -39,8 +37,6 @@ npm install
 npm start
 ```
 
-apiサーバーも起動が完了していれば、下記のURLにアクセスしてください。
-```
-クイズ作成画面[http://localhost:9000/manage](http://localhost:9000/manage)
-クイズ回答画面[http://localhost:9000/answer](http://localhost:9000/answer)
-```
+apiサーバーも起動が完了していれば、下記のURLにアクセスしてください。  
+クイズ作成画面 [http://localhost:9000/manage](http://localhost:9000/manage)  
+クイズ回答画面 [http://localhost:9000/answer](http://localhost:9000/answer)
