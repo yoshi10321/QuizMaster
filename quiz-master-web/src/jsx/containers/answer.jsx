@@ -9,9 +9,9 @@ export var Answer = class Answer extends React.PureComponent {
     return (
       <div className='answer'>
         <div className='answer-inner'>
-          <p className='answer-header-text'>
+          <h1 className='answer-header-text'>
             Let's answer the questions!
-          </p>
+          </h1>
           <AnswerQuestionsList />
         </div>
       </div>

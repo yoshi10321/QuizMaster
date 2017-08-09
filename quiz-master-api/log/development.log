@@ -14615,3 +14615,815 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:06:25 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:06:25 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:06:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:06:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:08:47 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:08:47 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:10 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:10 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:21 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:21 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:39 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.5ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 02:09:39 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:20:45 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', `updated_at` = '2017-08-09 18:20:45' WHERE `questions`.`id` = 1[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 16ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:20:45 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (1.5ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:20:51 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', `updated_at` = '2017-08-09 18:20:51' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.4ms)
+
+
+  
+ActiveRecord::ValueTooLong (Mysql2::Error: Data too long for column 'content' at row 1: UPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', `updated_at` = '2017-08-09 18:20:51' WHERE `questions`.`id` = 1):
+  
+app/controllers/questions_controller.rb:25:in `update'
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:20:55 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:20:55 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:21:01 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', `updated_at` = '2017-08-09 18:21:01' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 8ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:21:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (1.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 3.2ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:21:12 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:21:12' WHERE `questions`.`id` = 1[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:21:12 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:25:16 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.6ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.5ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:25:23 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:26:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:26:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:31:48 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:31:48 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (2.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 4.4ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:01 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:01' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:32:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:16 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:16' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:32:16 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:28 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:28' WHERE `questions`.`id` = 1[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:32:28 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:38 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:38' WHERE `questions`.`id` = 1[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:32:38 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:47 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:47' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:32:47 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:32:54 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいえあふぁえふぁえふぁｆだふぇふぁおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいえあふぁえふぁえふぁｆだふぇふぁおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいえあふぁえふぁえふぁｆだふぇふぁおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:54' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::ValueTooLong (Mysql2::Error: Data too long for column 'content' at row 1: UPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいえあふぁえふぁえふぁｆだふぇふぁおえのあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:32:54' WHERE `questions`.`id` = 1):
+  
+app/controllers/questions_controller.rb:25:in `update'
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:33:01 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:33:01' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:33:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:33:10 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇｋだかかかかかかかかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇｋだかかかかかかかかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇｋだかかかかかかかかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:33:10' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::ValueTooLong (Mysql2::Error: Data too long for column 'content' at row 1: UPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇｋだかかかかかかかかaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb', `updated_at` = '2017-08-09 18:33:10' WHERE `questions`.`id` = 1):
+  
+app/controllers/questions_controller.rb:25:in `update'
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:33:15 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇ", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇ", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇ', `updated_at` = '2017-08-09 18:33:15' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:33:15 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/questions/1" for 127.0.0.1 at 2017-08-10 03:33:22 +0900
+Processing by QuestionsController#update as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか", "answer"=>"鳥", "id"=>"1", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか", "answer"=>"鳥"}}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: :id, :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[33mUPDATE `questions` SET `content` = '<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか', `updated_at` = '2017-08-09 18:33:22' WHERE `questions`.`id` = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:33:22 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:38:51 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:38:51 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-08-10 03:39:54 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか", "answer"=>"鳥", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか", "answer"=>"鳥"}}
+Unpermitted parameter: :question
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `questions` (`content`, `answer`, `created_at`, `updated_at`) VALUES ('<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?あかいあいいっふぁｄふぁだｄふぁっｄさｆかかｋだいのなおいｆねおいなおえふぃおあいえんふぉあいねふぉいえあおだだおのあえのにおえいのいあえのふぃのえいんふぉあいおえのだえあえあねおいおふぃおあいふぇかかかかかかかか', '鳥', '2017-08-09 18:39:54', '2017-08-09 18:39:54')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:39:54 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-08-10 03:39:55 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?", "answer"=>"鳥", "question"=>{"content"=>"<img src='http://www.wallpaper-box.com/bird/images/bird7.jpg' width=100px />\nこれは何でしょう?", "answer"=>"鳥"}}
+Unpermitted parameter: :question
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO `questions` (`content`, `answer`, `created_at`, `updated_at`) VALUES ('<img src=\'http://www.wallpaper-box.com/bird/images/bird7.jpg\' width=100px />\nこれは何でしょう?', '鳥', '2017-08-09 18:39:55', '2017-08-09 18:39:55')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:39:55 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/questions" for 127.0.0.1 at 2017-08-10 03:39:59 +0900
+Processing by QuestionsController#create as HTML
+  Parameters: {"content"=>"<img src='https://dzwud19fd1isz.cloudfront.net/images/detailMain_pomeranian.png?20170428' width=100px />\n<br />\nこれは何でしょう?", "answer"=>"犬", "question"=>{"content"=>"<img src='https://dzwud19fd1isz.cloudfront.net/images/detailMain_pomeranian.png?20170428' width=100px />\n<br />\nこれは何でしょう?", "answer"=>"犬"}}
+Unpermitted parameter: :question
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO `questions` (`content`, `answer`, `created_at`, `updated_at`) VALUES ('<img src=\'https://dzwud19fd1isz.cloudfront.net/images/detailMain_pomeranian.png?20170428\' width=100px />\n<br />\nこれは何でしょう?', '犬', '2017-08-09 18:39:59', '2017-08-09 18:39:59')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 6ms (Views: 0.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:39:59 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:40:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.7ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.7ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:40:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:41:44 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (2.6ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:41:44 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:01 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:09 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (1.0ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.5ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:10 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:42:46 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.4ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:43:12 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2017-08-10 03:43:12 +0900
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions` ORDER BY id DESC[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 9 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 8 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 7 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 6 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 5 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 4 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 3 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.2ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 2 LIMIT 1[0m
+  [1m[36mCorrectRate Load (0.3ms)[0m  [1m[34mSELECT  `correct_rates`.* FROM `correct_rates` WHERE `correct_rates`.`question_id` = 1 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+

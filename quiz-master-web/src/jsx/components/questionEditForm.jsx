@@ -47,21 +47,16 @@ export class QuestionEditForm extends React.PureComponent {
       <div className='question-edit-form'>
         <form>
           <p>
-            <label>
-              Content:
-              <textarea className='question-edit-form-input' name='content' rows='10' value={this.state.content} onChange={this.handleContentChange} />
-            </label>
+            <label>Content</label>
+            <textarea className='question-edit-form-input mts' name='content' rows='10' value={this.state.content} onChange={this.handleContentChange} />
           </p>
           <div className='question-edit-form-preview'>
             <p dangerouslySetInnerHTML={{ __html: this.state.content }} />
           </div>
           <br />
           <p>
-            <label>
-              Answer:
-              <br />
-              <input className='question-edit-form-input' type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
-            </label>
+            <label>Answer</label>
+            <input className='question-edit-form-input mts' type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
           </p>
           <br />
           <input type='button' value='regist' onClick={() => dispatch(registQuestion(this.state.content, this.state.answer))} />

@@ -6,9 +6,17 @@
   vertical-align: top;
   width: 40%;
   height: 200px;
+  border-radius: .375rem;
+}
+
+.questions-list-item-head {
+  font-size: 20px;
 }
 
 .questions-list-item-content {
-  word-wrap: break-word;
   text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }

@@ -28,11 +28,11 @@ export class QuestionsList extends React.PureComponent {
       listItems = questions.data.map((question) =>
         <li key={question.id} className='questions-list-item' onClick={() => { this.editQuestion(question.id, question.content, question.answer) }}>
           <div>
-            <p>Content</p>
-            <div className='questions-list-item-content' dangerouslySetInnerHTML={{ __html: question.content }} />
+            <h3 className='questions-list-item-head'>Content</h3>
+            <p className='questions-list-item-content mts' dangerouslySetInnerHTML={{ __html: question.content }} />
             <br />
-            <p>Answer</p>
-            <p>{question.answer}</p>
+            <h3 className='questions-list-item-head'>Answer</h3>
+            <p className='mts'>{question.answer}</p>
           </div>
         </li>
       )
