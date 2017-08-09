@@ -1,10 +1,14 @@
 .question-edit-form {
   background-color: #FFF;
   padding: 20px;
-  width: 300px;
+  width: 294px;
   position: fixed;
 }
 
 .question-edit-form-input {
   width: 100%;
+}
+
+.question-edit-form-preview {
+  word-wrap: break-word;
 }

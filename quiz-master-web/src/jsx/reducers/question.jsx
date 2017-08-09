@@ -1,4 +1,5 @@
 import { SELECT_QUESTION } from '../actions/selectQuestion'
+import { RESET_SELECT_QUESTION } from '../actions/resetSelectQuestion'
 
 const defaultState = {
   id: '',
@@ -19,6 +20,9 @@ function question (state = defaultState, action) {
       content,
       answer
     })
+  }
+  case RESET_SELECT_QUESTION: {
+    return Object.assign({}, state, defaultState)
   }
   default:
     return state

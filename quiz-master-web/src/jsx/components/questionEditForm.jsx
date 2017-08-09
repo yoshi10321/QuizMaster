@@ -1,7 +1,9 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { editQuestion } from '../actions/editQuestion'
+import { editQuestion, EDIT_QUESTION_SUCCESS_MESSAGE } from '../actions/editQuestion'
 import { deleteQuestion } from '../actions/deleteQuestion'
+import { registQuestion, REGIST_QUESTION_SUCCESS_MESSAGE } from '../actions/registQuestion'
+import { resetSelectQuestion } from '../actions/resetSelectQuestion'
 
 require('../../scss/questionEditForm.scss')
 
@@ -26,18 +28,23 @@ export class QuestionEditForm extends React.PureComponent {
   }
 
   componentWillReceiveProps (nextProps) {
-    const { question } = nextProps
+    const { question, notification, dispatch } = nextProps
     this.setState({
       content: question.content,
       answer: question.answer
     })
+
+    if (notification.message === REGIST_QUESTION_SUCCESS_MESSAGE ||
+    notification.message === EDIT_QUESTION_SUCCESS_MESSAGE) {
+      dispatch(resetSelectQuestion())
+    }
   }
 
   render () {
     const { dispatch, question } = this.props
+
     return (
       <div className='question-edit-form'>
-        <p>Edit</p>
         <form>
           <p>
             <label>
@@ -45,6 +52,10 @@ export class QuestionEditForm extends React.PureComponent {
               <textarea className='question-edit-form-input' name='content' rows='10' value={this.state.content} onChange={this.handleContentChange} />
             </label>
           </p>
+          <div className='question-edit-form-preview'>
+            <p dangerouslySetInnerHTML={{ __html: this.state.content }} />
+          </div>
+          <br />
           <p>
             <label>
               Answer:
@@ -52,6 +63,8 @@ export class QuestionEditForm extends React.PureComponent {
               <input className='question-edit-form-input' type='text' name='answer' value={this.state.answer} onChange={this.handleAnswerChange} />
             </label>
           </p>
+          <br />
+          <input type='button' value='regist' onClick={() => dispatch(registQuestion(this.state.content, this.state.answer))} />
           <input type='button' value='update' onClick={() => dispatch(editQuestion(question.id, this.state.content, this.state.answer))} />
           <input type='button' value='delete' onClick={() => dispatch(deleteQuestion(question.id))} />
         </form>
@@ -62,7 +75,8 @@ export class QuestionEditForm extends React.PureComponent {
 
 QuestionEditForm.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  question: PropTypes.object
+  question: PropTypes.object,
+  notification: PropTypes.object
 }
 
 function mapStateToProps (state) {
