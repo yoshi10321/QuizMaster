@@ -14077,3 +14077,32 @@ Processing by QuestionsController#index as HTML
 Completed 200 OK in 71ms (Views: 0.3ms | ActiveRecord: 19.6ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (42.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK(3143987263343615010, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateQuestions (20170730233718)
+  [1m[35m (42.7ms)[0m  [1m[35mCREATE TABLE `questions` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` varchar(255), `answer` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170730233718')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCorrectRates (20170807092349)
+  [1m[35m (43.3ms)[0m  [1m[35mCREATE TABLE `correct_rates` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `correct_count` int, `incorrect_count` int, `correct_rate` int, `question_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_correct_rates_on_question_id`  (`question_id`), CONSTRAINT `fk_rails_22d64afcdf`
+FOREIGN KEY (`question_id`)
+  REFERENCES `questions` (`id`)
+) ENGINE=InnoDB[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCREATE  INDEX `index_correct_rates_on_correct_rate`  ON `correct_rates` (`correct_rate`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170807092349')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-08-09 14:48:01', '2017-08-09 14:48:01')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK(3143987263343615010)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `correct_rates`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `questions`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'questions'[0m
