@@ -40,3 +40,9 @@ npm start
 apiサーバーも起動が完了していれば、下記のURLにアクセスしてください。  
 クイズ作成画面 [http://localhost:9000/manage](http://localhost:9000/manage)  
 クイズ回答画面 [http://localhost:9000/answer](http://localhost:9000/answer)
+
+テストには`jest`を使用しています。  
+下記コマンドでテストが実行できます。
+```
+npm test
+```
