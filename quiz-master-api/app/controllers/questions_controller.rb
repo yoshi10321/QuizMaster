@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 
   # GET /questions
   def index
-    @questions = Question.all
+    @questions = Question.order("id DESC").all
     json_response(@questions.to_json(:include => :correct_rate))
   end
   
