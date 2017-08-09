@@ -7,8 +7,8 @@ it's made with React and Redux.
 
 quiz-master-web requires the following to run:
 
-  * [Node.js](https://github.com/nodejs/node) +7.4
-  * [npm](https://github.com/npm/npm) +3.10
+  * [Node.js](https://github.com/nodejs/node) +8.2
+  * [npm](https://github.com/npm/npm) +5.3
 
 ## Usage
 quiz-master-web is easy to run in npm:
