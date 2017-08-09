@@ -11,7 +11,7 @@ quiz-master-web requires the following to run:
   * [npm](https://github.com/npm/npm) +5.3
 
 ## Usage
-quiz-master-web is easy to run in npm:
+quiz-master-web is easy to run in npm:
 
 ```
 npm install
