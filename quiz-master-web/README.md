@@ -16,3 +16,9 @@ quiz-master-web is easiest to run in npm:
 npm install
 npm start
 ```
+
+## Test
+to use `jest` for testing
+```
+npm test
+```
