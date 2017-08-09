@@ -42,7 +42,7 @@ bundle exec rspec
 ## 日本語
 quiz-master-apiはRuby on Railsで作成したAPIサーバーアプリケーションです。
 DBにMySqlを使用しているのでMySqlのインストールをお願いします。
-インストールが完了したら、下記のコマンドでデータベースの作成を行ってください。
+インストールが完了したら、下記ようにデータベースの作成を行ってください。
 ```
 create database quizmaster;
 ```
@@ -57,4 +57,13 @@ bundle install
 アプリの起動をします。
 ```
 rails s
+```
+
+テストを動かす場合はテスト用のdatabaseを作成してください。
+```
+create database quizmaster_test;
+```
+下記のコマンドでテストが実行できます。
+```
+bundle exec rspec
 ```
