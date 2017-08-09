@@ -11,7 +11,7 @@ quiz-master-api requires the following to run:
 ## Usage
 1. quiz-master-api uses MySql for database.
 you need to install MySql.
-2. you need to create a database.
+2. to create a database.
 ```
 create database quizmaster;
 ```
@@ -46,7 +46,7 @@ DBにMySqlを使用しているのでMySqlのインストールをお願いし�
 ```
 create database quizmaster;
 ```
-次に下記コマンドでデータベースのマイグレーションを行ってください。必要なテーブルが作成されます。
+次に下記コマンドでデータベースのマイグレーションを行ってください。必要なテーブルが作成されます。
 ```
 rails db:migrate
 ```
