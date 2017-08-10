@@ -1,6 +1,6 @@
 # QuizMasterAPI
 
-quiz-master-api is front end application of QuizMaster.
+quiz-master-api is front-end application of QuizMaster.
 
 ## Requirements
 quiz-master-api requires the following to run:
@@ -42,7 +42,7 @@ bundle exec rspec
 ## 日本語
 quiz-master-apiはRuby on Railsで作成したAPIサーバーアプリケーションです。
 DBにMySqlを使用しているのでMySqlのインストールをお願いします。
-インストールが完了したら、下記ようにデータベースの作成を行ってください。
+インストールが完了したら、下記のようにデータベースの作成を行ってください。
 ```
 create database quizmaster;
 ```
