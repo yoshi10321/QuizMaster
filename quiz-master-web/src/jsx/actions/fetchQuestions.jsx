@@ -16,10 +16,14 @@ function fetchQuestionsError () {
   }
 }
 
-export const fetchQuestions = () => {
+export const fetchQuestions = (order) => {
   return dispatch => {
     return client.get(
-      'questions'
+      'questions', {
+        params: {
+          order
+        }
+      }
     ).then(res => {
       dispatch(fetchQuestionsSuccess(res.data))
     }).catch(() => {

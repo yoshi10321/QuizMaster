@@ -30,6 +30,7 @@ export class AnswerForm extends React.PureComponent {
 
     this.handleAnswerChange = this.handleAnswerChange.bind(this)
     this.handleAnswerQuestion = this.handleAnswerQuestion.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleAnswerChange (e) {
@@ -40,6 +41,11 @@ export class AnswerForm extends React.PureComponent {
     this.setState({show: false})
     const { dispatch, ...question } = this.props
     dispatch(answerQuestion(question.id, this.state.formValue))
+  }
+
+  handleSubmit (e) {
+    e.preventDefault()
+    this.handleAnswerQuestion()
   }
 
   componentWillReceiveProps (nextProps) {
@@ -75,7 +81,7 @@ export class AnswerForm extends React.PureComponent {
           </div>
           <br />
           <h3 className='answer-form-text-h3'>Answer</h3>
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <div className='mts'>
               <label>
                 <input type='text' name='answer' onChange={this.handleAnswerChange} />

@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { fetchQuestions } from '../actions/fetchQuestions'
 import AnswerForm from '../components/answerForm'
 
+require('../../scss/answerQuestionsList.scss')
+
 export class AnswerQuestionsList extends React.PureComponent {
   componentDidMount () {
     const { dispatch } = this.props
@@ -10,7 +12,7 @@ export class AnswerQuestionsList extends React.PureComponent {
   }
 
   render () {
-    const { questions } = this.props
+    const { dispatch, questions } = this.props
     let listItems
 
     if (questions) {
@@ -23,6 +25,10 @@ export class AnswerQuestionsList extends React.PureComponent {
 
     return (
       <div>
+        <div className='mtl mbl'>
+          <span className='answer-order-label' onClick={() => dispatch(fetchQuestions())}>latest</span>
+          <span className='answer-order-label mlm' onClick={() => dispatch(fetchQuestions('difficult'))}>difficult</span>
+        </div>
         <ul>
           {listItems}
         </ul>

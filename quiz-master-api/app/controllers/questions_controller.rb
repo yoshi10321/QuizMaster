@@ -5,7 +5,12 @@ class QuestionsController < ApplicationController
 
   # GET /questions
   def index
-    @questions = Question.order("id DESC").all
+    @order = params[:order]
+    if @order == "difficult"
+      @questions = Question.includes(:correct_rate).order("correct_rates.correct_rate ASC").all
+    else
+      @questions = Question.order("id DESC").all
+    end
     json_response(@questions.to_json(:include => :correct_rate))
   end
   
@@ -39,19 +44,7 @@ class QuestionsController < ApplicationController
     @result = check_answer(@userAnswer, @questionAnswer)
 
     @correctRate = CorrectRate.find_or_initialize_by(question_id: @id)
-    if @result == 'correct'
-      @correctRate.correct_count = @correctRate.correct_count + 1
-    else
-      @correctRate.incorrect_count = @correctRate.incorrect_count + 1
-    end
-
-    @rate = (@correctRate.correct_count.to_f / (@correctRate.correct_count + @correctRate.incorrect_count).to_f) * 100
-
-    @correctRate.update_attributes(
-      correct_count: @correctRate.correct_count,
-      incorrect_count: @correctRate.incorrect_count,
-      correct_rate: @rate
-    )
+    @correctRate.update_by_answer_result(@result)
 
     json_response(:result => @result)
   end

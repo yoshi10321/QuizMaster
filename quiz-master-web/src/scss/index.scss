@@ -1,7 +1,25 @@
 @import 'reset';
 
 $s: 5px;
+$m: 10px;
+$l: 20px;
 
 .mts {
 	margin-top: $s;
+}
+
+.mtm {
+	margin-top: $m;
+}
+
+.mtl {
+	margin-top: $l;
+}
+
+.mbl {
+	margin-bottom: $l;
+}
+
+.mlm {
+	margin-left: $m;
 }
